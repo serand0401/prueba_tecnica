@@ -47,11 +47,11 @@
                         </ul>
                     </div>
                     <div class="card-body">
-                        <form class="row g-3 needs-validation" novalidate>
+                        <form action="controller/register.php" method="post" class="row g-3 needs-validation" novalidate>
                             <div class="col-md-6">
                                 <label for="name" class="form-label">Full Name</label>
                                     <div class="input-group has-validation">
-                                        <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Full Name" required>
                                         <div class="invalid-tooltip">
                                             Please write your Full Name
                                         </div>
@@ -60,7 +60,7 @@
                             <div class="col-md-6">
                                 <label for="username" class="form-label">Username</label>
                                 <div class="input-group has-validation">
-                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                    <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
                                     <div class="invalid-tooltip">
                                         Please choose a username.
                                     </div>
@@ -69,7 +69,7 @@
                             <div class="col-md-6">
                                 <label for="password" class="form-label">Password</label>
                                 <div class="input-group has-validation">
-                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
                                     <div class="invalid-tooltip">
                                         Please provide password.
                                     </div>
@@ -78,7 +78,7 @@
                             <div class="col-md-6">
                                 <label for="confirmpass" class="form-label">Confirm Password</label>
                                 <div class="input-group has-validation">
-                                    <input type="password" class="form-control" id="confirmpass" placeholder="Confirm Password" required>
+                                    <input type="password" class="form-control" name="confirmpass" id="confirmpass" placeholder="Confirm Password" required>
                                     <div class="invalid-tooltip">
                                         Please select a valid state.
                                     </div>
@@ -87,7 +87,7 @@
                             <div class="col-md-6">
                                 <label for="email" class="form-label">Email Address</label>
                                 <div class="input-group has-validation">
-                                    <input type="text" class="form-control" id="email" placeholder="demomail@mail.com" required>
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="demomail@mail.com" required>
                                     <div class="invalid-tooltip">
                                         Please provide a valid email.
                                     </div>
@@ -95,7 +95,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="confirmemail" class="form-label">Confirm Email Address</label>
-                                <input type="text" class="form-control" id="confirmemail" placeholder="demomail@mail.com" required>
+                                <input type="text" class="form-control" name="confirmemail" id="confirmemail" placeholder="demomail@mail.com" required>
                                     <div class="invalid-tooltip">
                                         Please provide a valid email.
                                     </div>
@@ -106,7 +106,7 @@
                                     <span class="input-group-text" id="inputGroupPrepend">
                                         <img src="images\facebook.png">
                                     </span>
-                                    <input type="text" class="form-control" id="socialfb" aria-describedby="inputGroupPrepend" placeholder="Facebook Username" required>
+                                    <input type="text" class="form-control" name="socialfb" id="socialfb" aria-describedby="inputGroupPrepend" placeholder="Facebook Username" required>
                                         <div class="invalid-tooltip">
                                             Please choose a username.
                                         </div>
@@ -118,7 +118,7 @@
                                     <span class="input-group-text" id="inputGroupPrepend">
                                         <img src="images\twitter.png">
                                     </span>
-                                    <input type="text" class="form-control" id="socialx" aria-describedby="inputGroupPrepend" placeholder="Twitter Username" required>
+                                    <input type="text" class="form-control" name="socialx" id="socialx" aria-describedby="inputGroupPrepend" placeholder="Twitter Username" required>
                                         <div class="invalid-tooltip">
                                             Please choose a username.
                                         </div>
