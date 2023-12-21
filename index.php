@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Profile</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #E0FFFF;
+        }
+    </style>
 </head>
 <body>
     <section class="content">
@@ -13,8 +18,18 @@
                 <div class="col-sm-4 mb-3 mb-sm-0">
                     <div class="card text-center">
                         <div class="card-body">
-                            <h5 class="card-title">Special title treatment</h5>
-                            <a type="file" href="#" class="btn btn-success">Upload New Photo </a>
+                            <h2 class="card-title">Jamed Allan</h2>
+                            <h8 class="card-title">@james</h8><p><br>
+                            <img src="images\men.jpg" class="rounded-circle" alt="men" width="120" height="120"><p>
+                            <div class="btn btn-success">
+                                <label class="form-label text-white m-1" for="customFile2">Upload New Photo</label>
+                                <input type="file" class="form-control d-none" id="customFile2" onchange="displaySelectedImage(event, 'selectedAvatar')" />
+                            </div><p>
+                            <div class="card card-body text-center" style="width: 385px;">
+                                Upload a new avatar. Larger image will be resized automatically.<p>
+                                    Maximum upload size is <strong>1 MB</strong>
+                            </div><br>
+                            <h9>Member since: <strong>29 september 2019</strong></h9>
                         </div>
                     </div>
                 </div>
@@ -54,7 +69,7 @@
                             <div class="col-md-6">
                                 <label for="password" class="form-label">Password</label>
                                 <div class="input-group has-validation">
-                                    <input type="password" class="form-control" id="password" required>
+                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
                                     <div class="invalid-tooltip">
                                         Please provide password.
                                     </div>
@@ -63,7 +78,7 @@
                             <div class="col-md-6">
                                 <label for="confirmpass" class="form-label">Confirm Password</label>
                                 <div class="input-group has-validation">
-                                    <input type="password" class="form-control" id="confirmpass" required>
+                                    <input type="password" class="form-control" id="confirmpass" placeholder="Confirm Password" required>
                                     <div class="invalid-tooltip">
                                         Please select a valid state.
                                     </div>
@@ -88,8 +103,10 @@
                             <div class="col-md-6">
                                 <label for="socialfb" class="form-label">Social Profile</label>
                                     <div class="input-group has-validation">
-                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                    <input type="text" class="form-control" id="socialfb" aria-describedby="inputGroupPrepend" required>
+                                    <span class="input-group-text" id="inputGroupPrepend">
+                                        <img src="images\facebook.png">
+                                    </span>
+                                    <input type="text" class="form-control" id="socialfb" aria-describedby="inputGroupPrepend" placeholder="Facebook Username" required>
                                         <div class="invalid-tooltip">
                                             Please choose a username.
                                         </div>
@@ -98,8 +115,10 @@
                             <div class="col-md-6">
                                 <label for="socialx" class="form-label">Social Profile</label>
                                     <div class="input-group has-validation">
-                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                    <input type="text" class="form-control" id="socialx" aria-describedby="inputGroupPrepend" required>
+                                    <span class="input-group-text" id="inputGroupPrepend">
+                                        <img src="images\twitter.png">
+                                    </span>
+                                    <input type="text" class="form-control" id="socialx" aria-describedby="inputGroupPrepend" placeholder="Twitter Username" required>
                                         <div class="invalid-tooltip">
                                             Please choose a username.
                                         </div>
@@ -115,5 +134,6 @@
         </div>
     </section>
     <script src="js/bootstrap.min.js"></script>
+    <script src="scripts\uploadPhoto.js"></script>
 </body>
 </html>
