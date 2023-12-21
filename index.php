@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Edit Profile</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
     <style>
         body {
             background-color: #CAD3DC;
@@ -22,8 +24,8 @@
                             <h8 class="card-title">@james</h8><p><br>
                             <img src="images\men.jpg" class="rounded-circle" alt="men" width="120" height="120"><p>
                             <div style="background-color:#FF0000; color:white" class="btn">
-                                <label class="form-label text-white m-1" for="customFile2">Upload New Photo</label>
-                                <input type="file" class="form-control d-none" id="customFile2" onchange="displaySelectedImage(event, 'selectedAvatar')" />
+                                <label class="form-label text-white m-1" for="foto1">Upload New Photo</label>
+                                <input type="file" class="form-control d-none" id="foto1" data-ext="jpg" onchange="displaySelectedImage(event, 'selectedAvatar')" />
                             </div><p>
                             <div class="card card-body text-center" style="width: 330px;">
                                 Upload a new avatar. Larger image will be resized automatically.<p>
@@ -47,7 +49,7 @@
                         </ul>
                     </div>
                     <div class="card-body">
-                        <form action="controller/register.php" method="post" class="row g-3 needs-validation" novalidate>
+                        <form action="controller\register.php" method="post" class="row g-3 needs-validation" novalidate>
                             <div class="col-md-6">
                                 <label for="name" class="form-label">Full Name</label>
                                     <div class="input-group has-validation">
@@ -133,7 +135,7 @@
             </div>
         </div>
     </section>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
     <script src="scripts\uploadPhoto.js"></script>
 </body>
 </html>
