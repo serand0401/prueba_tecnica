@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         body {
-            background-color: #E0FFFF;
+            background-color: #CAD3DC;
         }
     </style>
 </head>
@@ -21,11 +21,11 @@
                             <h2 class="card-title">Jamed Allan</h2>
                             <h8 class="card-title">@james</h8><p><br>
                             <img src="images\men.jpg" class="rounded-circle" alt="men" width="120" height="120"><p>
-                            <div class="btn btn-success">
+                            <div style="background-color:#FF0000; color:white" class="btn">
                                 <label class="form-label text-white m-1" for="customFile2">Upload New Photo</label>
                                 <input type="file" class="form-control d-none" id="customFile2" onchange="displaySelectedImage(event, 'selectedAvatar')" />
                             </div><p>
-                            <div class="card card-body text-center" style="width: 385px;">
+                            <div class="card card-body text-center" style="width: 330px;">
                                 Upload a new avatar. Larger image will be resized automatically.<p>
                                     Maximum upload size is <strong>1 MB</strong>
                             </div><br>
@@ -125,7 +125,7 @@
                                     </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-success" type="submit">Update Info</button>
+                                <button style="background-color:#FF0000; color:white" class="btn" type="submit">Update Info</button>
                             </div>
                         </form>
                     </div>
