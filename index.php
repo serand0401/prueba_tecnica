@@ -125,7 +125,7 @@
                                     </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-success" type="submit">Update Info</button>
+                                <button class="btn btn-danger" type="submit">Update Info</button>
                             </div>
                         </form>
                     </div>
